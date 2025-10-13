@@ -10,7 +10,21 @@
     <title>my-react-app</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="app"></div>
+
+    <!-- Load jQuery and plugins first so components can use window.$ on mount -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+    <script  src="./node_modules/jquery.easing/jquery.easing.min.js"></script>
+    <script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./node_modules/jquery.counterup/jquery.counterup.min.js"></script>
+
+    <!-- Mount React after plugins are available -->
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Run plugin initializers that expect rendered DOM (main.js) -->
+    <script src="./src/main.js"></script>
   </body>
 </html>

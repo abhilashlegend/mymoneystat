@@ -222,7 +222,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(./assets/bg.png);
 }
 
 
@@ -337,8 +337,16 @@ h6,
     justify-content: center;
 }
 
+.owl-carousel.project-carousel .owl-nav .owl-prev,
+.owl-carousel.project-carousel .owl-nav .owl-next,
+.project-carousel.owl-carousel .owl-nav .owl-prev,
+.project-carousel.owl-carousel .owl-nav .owl-next,
 .project-carousel .owl-nav .owl-prev,
-.project-carousel .owl-nav .owl-next {
+.project-carousel .owl-nav .owl-next,
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
     margin: 0 12px;
     width: 45px;
     height: 45px;
@@ -350,10 +358,18 @@ h6,
     border-radius: 45px;
     font-size: 22px;
     transition: .5s;
+    border: none;
+    z-index: 20;
 }
 
+.owl-carousel.project-carousel .owl-nav .owl-prev:hover,
+.owl-carousel.project-carousel .owl-nav .owl-next:hover,
 .project-carousel .owl-nav .owl-prev:hover,
-.project-carousel .owl-nav .owl-next:hover {
+.project-carousel .owl-nav .owl-next:hover,
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover,
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
     background: var(--primary);
     color: var(--light);
 }
@@ -475,7 +491,7 @@ h6,
     margin: 0 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid var(--light);
+    border: 1px solid var(--light) !important;
     border-radius: 30px;
     transition: .5s;
 }
@@ -493,7 +509,7 @@ h6,
 }
 
 .testimonial-carousel .owl-dot.active {
-    border-color: var(--primary);
+    border-color: var(--primary) !important;
 }
 
 .testimonial-carousel .owl-dot.active::after {
@@ -538,4 +554,43 @@ h6,
 
 .copyright a:hover {
     color: var(--primary);
+}
+
+/* Strong override for Owl Carousel nav buttons to ensure project styles apply */
+.owl-carousel.project-carousel .owl-nav .owl-prev,
+.owl-carousel.project-carousel .owl-nav .owl-next,
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+    margin: 0 12px !important;
+    width: 45px !important;
+    height: 45px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: var(--primary) !important;
+    background: var(--light) !important;
+    border-radius: 45px !important;
+    font-size: 22px !important;
+    transition: .5s !important;
+    z-index: 9999 !important;
+}
+
+.owl-carousel.project-carousel .owl-nav .owl-prev:hover,
+.owl-carousel.project-carousel .owl-nav .owl-next:hover,
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover,
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
+    background: var(--primary) !important;
+    color: var(--light) !important;
+}
+
+/* Ensure icon inside nav inherits color */
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i,
+.owl-nav button.owl-prev i,
+.owl-nav button.owl-next i {
+    color: inherit !important;
 }

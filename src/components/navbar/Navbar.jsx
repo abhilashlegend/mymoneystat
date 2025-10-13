@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s" style={{ visibility: "visible", animationDelay: "0.1s", animationName: "fadeIn" }}>
@@ -13,9 +15,9 @@ export default function Navbar() {
                     <a href="about.html" className="nav-item nav-link">About</a>
                     <a href="service.html" className="nav-item nav-link">Services</a>
                     <div className="nav-item dropdown">
-                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Calculate</a>
                         <div className="dropdown-menu border-light m-0">
-                            <a href="project.html" className="dropdown-item">Projects</a>
+                            <a href="project.html" className="dropdown-item">SIP Returns</a>
                             <a href="feature.html" className="dropdown-item">Features</a>
                             <a href="team.html" className="dropdown-item">Team Member</a>
                             <a href="testimonial.html" className="dropdown-item">Testimonial</a>
