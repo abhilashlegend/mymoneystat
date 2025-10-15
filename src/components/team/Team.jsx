@@ -1,6 +1,7 @@
 import Team1 from '../../assets/team-1.jpg';
 import Team2 from '../../assets/team-2.jpg';
 import Team3 from '../../assets/team-3.jpg';
+import './Team.css';
 
 export default function Team() {
     return (
@@ -12,7 +13,7 @@ export default function Team() {
                 </div>
                 <div className="row g-4">
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInUp' }}>
-                        <div className="team-item">
+                        <div className='team-item'>
                             <img className="img-fluid rounded" src={Team1} alt="Kate Winslet" />
                             <div className="team-text">
                                 <h4 className="mb-0">Kate Winslet</h4>

@@ -1,4 +1,5 @@
 import Counter from '../common/Counter'
+import './Facts.css'
 
 export default function Facts() {
     return(

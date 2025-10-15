@@ -3,6 +3,7 @@ import Test1 from '../../assets/testimonial-1.jpg'
 import Test2 from '../../assets/testimonial-2.jpg'
 import Test3 from '../../assets/testimonial-3.jpg'
 import Test4 from '../../assets/testimonial-4.jpg'
+import './Testimonial.css'
 
 const testimonials = [
     { img: Test1, text: 'Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum.' },

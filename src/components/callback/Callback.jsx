@@ -1,3 +1,5 @@
+import './Callback.css';
+
 export default function Callback() {
     return (
         <div className="container-fluid callback my-5 pt-5">

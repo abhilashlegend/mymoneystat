@@ -1,0 +1,17 @@
+/*** Service ***/
+.service .nav .nav-link {
+    transition: .5s;
+}
+
+.service .nav .nav-link.active {
+    border-color: var(--primary) !important;
+    background: var(--primary);
+}
+
+.service .nav .nav-link.active h5 {
+    color: #FFFFFF !important;
+}
+
+.service .nav .nav-link.active h5 i {
+    color: #FFFFFF !important;
+}

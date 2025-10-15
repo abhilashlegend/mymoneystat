@@ -3,6 +3,7 @@ import Service1 from '../../assets/service-1.jpg'
 import Service2 from '../../assets/service-2.jpg'
 import Service3 from '../../assets/service-3.jpg'
 import Service4 from '../../assets/service-4.jpg'
+import './Projects.css'
 
 const projects = [
     { title: 'Cash Investment', img: Service2 },

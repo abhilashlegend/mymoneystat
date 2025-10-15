@@ -1,0 +1,138 @@
+
+/*** Project ***/
+.project-item,
+.project-item .project-img {
+    position: relative;
+}
+
+.project-item .project-img a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.project-item:hover .project-img a {
+    opacity: 1;
+}
+
+.project-item .project-title {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    bottom: 0;
+    left: 3rem;
+    border: 1px solid var(--light);
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.project-item:hover .project-title {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.project-item .project-title h4 {
+    transition: .5s;
+}
+
+.project-item:hover .project-title h4 {
+    color: #FFFFFF;
+}
+
+.project-carousel .owl-nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.owl-carousel.project-carousel .owl-nav .owl-prev,
+.owl-carousel.project-carousel .owl-nav .owl-next,
+.project-carousel.owl-carousel .owl-nav .owl-prev,
+.project-carousel.owl-carousel .owl-nav .owl-next,
+.project-carousel .owl-nav .owl-prev,
+.project-carousel .owl-nav .owl-next,
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+    margin: 0 12px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: var(--light);
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+    border: none;
+    z-index: 20;
+}
+
+.owl-carousel.project-carousel .owl-nav .owl-prev:hover,
+.owl-carousel.project-carousel .owl-nav .owl-next:hover,
+.project-carousel .owl-nav .owl-prev:hover,
+.project-carousel .owl-nav .owl-next:hover,
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover,
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
+
+
+
+/* Strong override for Owl Carousel nav buttons to ensure project styles apply */
+.owl-carousel.project-carousel .owl-nav .owl-prev,
+.owl-carousel.project-carousel .owl-nav .owl-next,
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+    margin: 0 12px !important;
+    width: 45px !important;
+    height: 45px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: var(--primary) !important;
+    background: var(--light) !important;
+    border-radius: 45px !important;
+    font-size: 22px !important;
+    transition: .5s !important;
+    z-index: 9999 !important;
+}
+
+.owl-carousel.project-carousel .owl-nav .owl-prev:hover,
+.owl-carousel.project-carousel .owl-nav .owl-next:hover,
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover,
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
+    background: var(--primary) !important;
+    color: var(--light) !important;
+}
+
+/* Ensure icon inside nav inherits color */
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i,
+.owl-nav button.owl-prev i,
+.owl-nav button.owl-next i {
+    color: inherit !important;
+}
